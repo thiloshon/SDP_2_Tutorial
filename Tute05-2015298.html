@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Thiloshons Blog</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<header>
+    <h1 align="center">Thilo Shon's Bloggy</h1>
+    <p align="center">Vadar over Luke anytime!</p>
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Tutorials</button>
+            <div class="dropdown-content">
+                <a href="Tute01-2015298.html">Tutorial 01</a>
+                <a href="Tute02-2015298.html">Tutorial 02</a>
+                <a href="Tute03-2015298.html">Tutorial 03</a>
+                <a href="Tute04-2015298.html">Tutorial 04</a>
+                <a href="Tute05-2015298.html">Tutorial 05</a>
+            </div>
+        </div>
+
+    </nav>
+
+
+</header>
+
+
+
+<script>
+
+
+
+
+    var generatedNumber = Math.floor((Math.random() * 100) + 1);
+    var times = 1;
+
+    var number = eval (prompt("Choose a random number"));
+
+    document.writeln(generatedNumber+"");
+    document.writeln(number+"");
+
+
+
+
+    while (times<3){
+        if (number == generatedNumber){
+            document.writeln("Congrats! You Won");
+            break;
+        }else {
+            document.write("Oops! That was close, ");
+            if (number>generatedNumber){
+                document.writeln("But abit greater/n");
+            }else {
+                document.writeln("But abit lesser/n");
+            }
+            times++;
+            number = eval (prompt("Choose a random number"));
+        }
+    }
+
+
+
+    document.write(generatedNumber);
+    document.write("hwy there")
+</script>
+
+
+</body>
+</html>

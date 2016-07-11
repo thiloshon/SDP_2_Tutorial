@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="css.css">
+    <script>
+         function nameRead() {
+
+             var message_entered = document.getElementById("name").value;
+             document.getElementById('dump').innerHTML = message_entered;
+
+         }
+
+    </script>
+</head>
+<body>
+    <header>
+        <h1 align="center">Thilo Shon's Bloggy</h1>
+        <p align="center">Vadar over Luke anytime!</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Tutorials</button>
+                <div class="dropdown-content">
+                    <a href="Tute01-2015298.html">Tutorial 01</a>
+                    <a href="Tute02-2015298.html">Tutorial 02</a>
+                    <a href="Tute03-2015298.html">Tutorial 03</a>
+                    <a href="Tute04-2015298.html">Tutorial 04</a>
+                    <a href="Tute05-2015298.html">Tutorial 05</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h1 align="center"> Application Form</h1>
+    <form>
+        Name:
+        <input type="text" id="name" size="40">
+        <br />
+        <br />
+        Address:
+        <input type="text" id="address" size="40">
+        <br />
+        <br />
+        Gender:
+        <input type="radio"
+               name="sex" value="M" />Male
+        <input type="radio"
+               name="sex" value="F" />Female<br />
+        <br />
+        Stream
+        <select name="Stream">
+            <option value="SE"> Software Engineering</option>
+            <option value="CS" selected> Computer Science </option>
+            <option value="ISBM"> Information Systems with Business Management </option>
+        </select>
+        </br>
+        </br>
+        Modules:
+        <input type="checkbox" name="Modules"
+               value="M1" />M1
+        <input type="checkbox" name="Modules" value="M2" />M2
+        <input type="checkbox" name="Modules" value="M3" />M3<br />
+        <br />
+        <input type="submit" name="button"
+               value="Okay" onclick="nameRead();" />
+    </form>
+    <p><span id='dump'></span> </p>
+
+    <footer id="footer">
+        <p align="center">Created by: Thiloshon</p>
+        <p align="center">
+            Contact information: <a href="mailto:thiloshon@gmail.com">
+                thiloshon@gmail.com
+            </a>.
+        </p>
+    </footer>
+
+
+</body>
+
+</html>
